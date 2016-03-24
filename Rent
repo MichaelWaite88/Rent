@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+class rent {
+    public static void main (String args[]){
+        Scanner keyboard = new Scanner(System.in);
+        double rent;
+        double cable;
+        double electricity;
+        double total;
+        double perPerson;
+
+        System.out.println("How much is rent this month?");
+        rent = keyboard.nextDouble();
+        System.out.println("How much is the cable bill this month?");
+        cable = keyboard.nextDouble();
+        System.out.println("How much is the electricity bill this month?");
+        electricity = keyboard.nextDouble();
+        total = rent + cable + electricity;
+        System.out.println("The rent and utility comes to a total of $" + total);
+        perPerson = total / 2;
+        System.out.println("That means each person owes: $" + perPerson);
+
+        keyboard.close();
+
+    }
+}
